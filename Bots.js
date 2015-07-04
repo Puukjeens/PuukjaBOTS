@@ -124,6 +124,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Puukjeens/PuukjaBOTS/master/PuukjeenaBOTS.js", extend);
+    $.getScript("https://rawgit.com/Puukjeens/PuukjaBOTS/master/extens.js", extend);
 
 }).call(this);
