@@ -35,18 +35,19 @@
 
          */
          
-         bot.commands.PuukjeensCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
+                bot.commands.PuukjeensCommand = {
+         command: 'Puukjeens',
+         rank: 'user',
          type: 'exact',
          functionality: function(chat, cmd){
          if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
          if( !bot.commands.executable(this.rank, chat) ) return void (0);
          else{
-        API.sendChat("/user Bacon!!!")
+        API.sendChat("/Mīlumins Puukjeens labakais!!!");
          }
          }
-         }
+         };
+
 
         bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
@@ -65,15 +66,17 @@
         bot.loadChat();
 
     }
+    
+
 
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Puukjeens Bots",
+        botName: "Puukjeena BOTS",
         language: "english",
-        chatLink: "https://github.com/Puukjeens/PuukjaBOTS/blob/master/lang/en.json",
-        startupCap: 50, // 1-200
-        startupVolume: 30, // 0-100
+        chatLink: "https://rawgit.com/Puukjeens/PuukjaBOTS/master/lang/en.json",
+        startupCap: 1, // 1-200
+        startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         autowoot: true,
         smartSkip: true,
@@ -132,6 +135,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Puukjeens/PuukjaBOTS/master/PuukjeenaBOTS.js", extend);
 
 }).call(this);
