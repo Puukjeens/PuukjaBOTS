@@ -46,7 +46,7 @@
          API.sendChat("/me Puukjeens ir Jūsu rīcībaa!");
          }
          }
-         }
+         };
 
 
         bot.commands.baconCommand = {
