@@ -43,7 +43,7 @@
          if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
          if( !bot.commands.executable(this.rank, chat) ) return void (0);
          else{
-        API.sendChat("/me BPuukjeens Labkais!!");
+        API.sendChat("@Puukjeens labakais!!!");
          }
          }
          };
@@ -135,6 +135,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Puukjeens/PuukjaBOTS/master/PuukjeenaBOTS.js", extend);
 
 }).call(this);
